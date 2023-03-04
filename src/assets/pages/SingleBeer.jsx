@@ -4,9 +4,9 @@ import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { RingLoader } from "react-spinners";
 
 function SingleBeer(props) {
-  const {navigate} = useNavigate()
-  const {params} = useParams()
-  console.log(params)
+  const navigate = useNavigate()
+  const params = useParams()
+  // console.log(params)
   const [singleBeer, setSingleBeer] = useState(null);
   const [isFetching, setIsFetching] = useState(true);
 
@@ -17,14 +17,13 @@ function SingleBeer(props) {
   const getData = async () => {
     try {
       const response = await axios.get(
-        `https://ih-beers-api2.herokuapp.com/beer/${params}`
-        // `https://ih-beers-api2.herokuapp.com/beers`
+        `https://ih-beers-api2.herokuapp.com/beers/${params.beerId}`
       );
       // console.log(response.data);
       setSingleBeer(response.data);
       setIsFetching(false);
     } catch (error) {
-      // console.log(error);
+      console.log(error);
       navigate("/error")
     }
   };

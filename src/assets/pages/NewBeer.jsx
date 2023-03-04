@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function NewBeer() {
-  const { navigate } = useNavigate();
+  const navigate = useNavigate();
 
   const [name, setName] = useState("");
   const [tagline, setTagline] = useState("");

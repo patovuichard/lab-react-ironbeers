@@ -38,6 +38,7 @@ function Beer() {
       <header style={{ backgroundColor: "lightblue", padding: "10px" }}>
         <NavLink to="/" >🏠</NavLink>
       </header>
+      
       {allBeers.map((eachBeer) => {
         return (
           <div key={eachBeer._id}>
