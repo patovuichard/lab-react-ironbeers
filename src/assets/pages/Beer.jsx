@@ -50,7 +50,7 @@ function Beer() {
                 width="20%"
               />
               <div style={{ margin: "20px" }}>
-                <NavLink to={`/beers/${eachBeer._id}`}>
+                <NavLink to={`/beers/${eachBeer._id}`} id={eachBeer._id}>
                   <h2>{eachBeer.name}</h2>
                 </NavLink>
                 
