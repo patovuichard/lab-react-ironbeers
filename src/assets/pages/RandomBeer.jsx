@@ -34,7 +34,7 @@ function RandomBeer() {
 
   return (
     <div>
-      <header style={{ backgroundColor: "lightblue", padding: "10px"}}>
+      <header style={{ backgroundColor: "rgb(0, 153, 255)", padding: "10px", textAlign: "center" }}>
         <NavLink to="/">🏠</NavLink>
       </header>
       <img src={singleBeer.image_url} alt="img" style={{paddingTop: "40px", width: "100px"}}  />

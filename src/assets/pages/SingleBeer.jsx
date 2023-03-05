@@ -30,7 +30,7 @@ function SingleBeer(props) {
 
   if (isFetching === true) {
     return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", textAlign: "center"  }}>
         <RingLoader color="#d63636" size={60} />
       </div>
     );
@@ -38,7 +38,7 @@ function SingleBeer(props) {
 
   return (
     <div>
-      <header style={{ backgroundColor: "lightblue", padding: "10px"}}>
+      <header style={{ backgroundColor: "rgb(0, 153, 255)", padding: "10px"}}>
         <NavLink to="/">🏠</NavLink>
       </header>
       <img src={singleBeer.image_url} alt="img" style={{paddingTop: "40px", width: "100px"}}  />

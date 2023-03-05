@@ -38,7 +38,7 @@ function NewBeer() {
 
   return (
     <div>
-      <header style={{ backgroundColor: "lightblue", padding: "10px" }}>
+      <header style={{ backgroundColor: "rgb(0, 153, 255)", padding: "10px", textAlign: "center"  }}>
         <NavLink to="/">🏠</NavLink>
       </header>
       <form>
@@ -90,7 +90,7 @@ function NewBeer() {
         <label htmlFor="attenuation_level">Attenuation Level</label>
         <br />
         <input
-          type="text"
+          type="number"
           name="attenuation_level"
           value={attenuation_level}
           onChange={(event) => setAttenuation_level(event.target.value)}

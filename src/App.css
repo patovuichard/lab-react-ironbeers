@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a div {
+  padding: 0px 40px 10px 30px;
+}
+
+a p {
+  color: gray;
+}
